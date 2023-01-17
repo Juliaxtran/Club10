@@ -55,7 +55,18 @@ nav {
 .about-vid {
   width: 600px;
   height: 500px;
-  border: 1px solid white;
+
+}
+
+.fa-solid {
+ color: white;
+ border: 1px solid white;
+ width: 50px;
+ font-size: 2em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ display: none;
 }
 
 
