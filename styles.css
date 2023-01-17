@@ -1,9 +1,36 @@
-*, body {
+*,
+body {
   margin: 0;
   padding: 0;
 }
 
-header {
+nav {
   background-color: black;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1em;
+  border: 1px solid red;
 }
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 50px;
+  height: 100px;
+  width: 300px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+.nav-links a:hover {
+  color: lightblue;
+  cursor: pointer;
+}
+
