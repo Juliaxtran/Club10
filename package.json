@@ -1,0 +1,22 @@
+{
+  "name": "club10-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juliaxtran/Club10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juliaxtran/Club10/issues"
+  },
+  "homepage": "https://github.com/Juliaxtran/Club10#readme",
+  "dependencies": {
+    "transition-style": "^0.1.3"
+  }
+}
