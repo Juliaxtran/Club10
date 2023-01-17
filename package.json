@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Juliaxtran/Club10#readme",
   "dependencies": {
+    "three": "^0.148.0",
     "transition-style": "^0.1.3"
   }
 }
