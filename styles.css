@@ -52,9 +52,6 @@ nav {
   color: white;
   width: 50px;
   font-size: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   display: none;
  }
 
@@ -63,19 +60,31 @@ nav {
     display: none;
   }
   .fa-solid {
+  
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
  }
 
 /*  About Area */
 #about {
   background-color: black;
-  height: 100vh;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
 }
 
 .about-vid {
-  width: 600px;
+  min-width: 500px;
   height: 500px;
 
 }
 
+.title {
+  color: white;
+  margin-top: 1em;
+  font-size: 5em;
+}
