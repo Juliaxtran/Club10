@@ -30,6 +30,10 @@ body {
   font-size: 2em;
 }
 
+nav, h3{
+  font-family: "Unica One", cursive;
+}
+
 nav {
   background-color: black;
   height: 100px;
@@ -44,7 +48,6 @@ nav {
   align-items: center;
   gap: 50px;
   height: 100px;
-  font-family: "Unica One", cursive;
 }
 
 .nav-links a {
@@ -72,7 +75,7 @@ section {
   justify-content: center;
 }
 
-section, #about {
+section#hero {
   align-items: flex-end;
 }
 
@@ -86,11 +89,7 @@ section, #about {
   z-index: -1;
 }
 
-.title {
-  color: white;
-  margin-top: 1em;
-  font-size: 5em;
-}
+
 
 .btn {
   border: none;
@@ -134,8 +133,18 @@ section, #about {
 
 }
 
+/* About Section */
 
+section#about {
+  line-height: 2em;
+}
 
+.about-text {
+  color: white;
+  padding: 2em;
+  margin-top: 3em;
+  letter-spacing: 2px;
+}
 
 
 /* Media Queries */
