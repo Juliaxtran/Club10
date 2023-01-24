@@ -15,8 +15,10 @@ body {
 }
 
 [transition-style="in:square:center"] {
-  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-center both;
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) square-in-center both;
 }
+
+
 
 /* Navigation */
 nav {
@@ -33,8 +35,7 @@ nav {
   align-items: center;
   gap: 50px;
   height: 100px;
-  font-family: 'Unica One', cursive;
-
+  font-family: "Unica One", cursive;
 }
 
 .nav-links a {
@@ -55,18 +56,17 @@ nav {
   color: white;
   width: 50px;
   font-size: 2em;
- }
-
+}
 
 /*  Hero Section */
 #hero {
-
   height: 500px;
   width: 100%;
   display: flex;
-  justify-content: center;
   position: relative;
   overflow: hidden;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .video-bg {
@@ -85,9 +85,51 @@ nav {
   font-size: 5em;
 }
 
+.btn {
+  border: none;
+  padding: 1em 3em;
+  border-radius: 30px;
+  margin-bottom: 1em;
+  cursor: pointer;
+  font-family: 'Unbounded', cursive;
+  background: #5c258d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #4389a2,
+    #5c258d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #4389a2,
+    #5c258d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  letter-spacing: 15px;
+  font-size: 1.2em;
+}
+
+.btn:hover , .btn:focus {
+  background: #5c258d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #4389a2,
+    #5c258d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #4389a2,
+    #5c258d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  scale: 1.1;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid pink;
+
+}
+
 /* Media Queries */
 
- @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .nav-links {
     display: none;
   }
@@ -97,4 +139,4 @@ nav {
     justify-content: center;
     align-items: center;
   }
- }
+}
