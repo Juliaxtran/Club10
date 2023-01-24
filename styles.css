@@ -3,6 +3,8 @@ body {
   margin: 0;
 }
 
+
+
 /* Animations  */
 
 @keyframes square-in-center {
@@ -21,6 +23,13 @@ body {
 
 
 /* Navigation */
+.fa-solid {
+  display: none;
+  color: white;
+  width: 50px;
+  font-size: 2em;
+}
+
 nav {
   background-color: black;
   height: 100px;
@@ -51,21 +60,19 @@ nav {
   transition: all 0.5s ease;
 }
 
-.fa-solid {
-  display: none;
-  color: white;
-  width: 50px;
-  font-size: 2em;
-}
+
 
 /*  Hero Section */
-#hero {
-  height: 500px;
-  width: 100%;
+section {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   position: relative;
   overflow: hidden;
   justify-content: center;
+}
+
+section, #about {
   align-items: flex-end;
 }
 
@@ -89,7 +96,7 @@ nav {
   border: none;
   padding: 1em 3em;
   border-radius: 30px;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
   cursor: pointer;
   font-family: 'Unbounded', cursive;
   background: #5c258d; /* fallback for old browsers */
@@ -108,7 +115,7 @@ nav {
   font-size: 1.2em;
 }
 
-.btn:hover , .btn:focus {
+.btn:hover , .btn:active {
   background: #5c258d; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -123,9 +130,13 @@ nav {
   color: white;
   scale: 1.1;
   transition: all 0.5s ease-in-out;
-  border: 2px solid pink;
+  border: 5px solid pink;
 
 }
+
+
+
+
 
 /* Media Queries */
 
