@@ -1,6 +1,11 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-const buttons = document.querySelectorAll("[data-carousel-button]")
+const buttons = document.querySelectorAll("[data-carousel-button]");
+const navigationHeight = document.querySelector(".navbar").offsetHeight;
+
+console.log(navigationHeight);
+
+document.documentElement.style.setProperty('--scroll-padding', `${navigationHeight}px`);
 
 // Hamberger menu toggle
 
