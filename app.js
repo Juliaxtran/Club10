@@ -23,7 +23,8 @@ logo.addEventListener("click", () => {
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
   setTimeout(() => {
-    navbarLinks.style.display = navbarLinks.style.display === "block" ? "none" : "block";
+    navbarLinks.style.display === "flex" ? "none" : "flex";
+    navbarLinks.style.display === "none" ? "flex" : "none";
   }, 100);
 });
 
