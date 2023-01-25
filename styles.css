@@ -182,9 +182,9 @@ section#hero {
 
 .btn {
   border: none;
-  padding: 1em 3em;
+  padding: 1em 2em;
   border-radius: 30px;
-  margin-bottom: 4em;
+  margin-bottom: 3em;
   cursor: pointer;
   font-family: 'Unbounded', cursive;
   background: #5c258d; /* fallback for old browsers */
@@ -203,6 +203,11 @@ section#hero {
   font-size: 1.2em;
 }
 
+.listen {
+  color: white;
+  font-family: 'Unbounded', cursive;
+  text-decoration: none;
+}
 .btn:hover , .btn:active {
   background: #5c258d; /* fallback for old browsers */
   background: -webkit-linear-gradient(

@@ -2,10 +2,24 @@ const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 const buttons = document.querySelectorAll("[data-carousel-button]");
 const navigationHeight = document.querySelector(".navbar").offsetHeight;
+const logo = document.querySelector(".logo");
+const listen = document.querySelector(".btn");
 
 console.log(navigationHeight);
 
 document.documentElement.style.setProperty('--scroll-padding', `${navigationHeight}px`);
+
+logo.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+listen.addEventListener("click", () => {
+  
+});
+
 
 // Hamberger menu toggle
 
