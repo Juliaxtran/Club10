@@ -8,7 +8,7 @@ const links = document.querySelectorAll(".navbar-links li");
 const jellyfish = document.getElementsByClassName("cover-art")[0];
 
 
-
+document.documentElement.style.setProperty('--scroll-padding', `${navigationHeight}px`);
 
 
 logo.addEventListener("click", () => {
