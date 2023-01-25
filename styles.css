@@ -255,15 +255,15 @@ section#about {
 }
 
 /* Music */
-section#music, section#jellyfish{
+section#music, section#jellyfish, section#staying{
  display: flex;
   flex-direction: column;
  justify-content: center;
  align-items: center;
-
+ padding-bottom: 2em;
 }
 
-section#music{
+section#music, section#staying{
   background-color: black;
 }
 
@@ -281,11 +281,11 @@ section#music{
 
 /* Jelly Fish */
 
-section#jellyfish {
+section#jellyfish, section#staying {
   gap: 4em;
 }
 
-section#jellyfish > h1 {
+section#jellyfish > h1, section#staying > h1 {
   color: white;
   font-size: 3em;
   font-family: 'Unbounded', cursive;
