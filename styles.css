@@ -72,9 +72,44 @@ nav, h3{
   transition: all 0.5s ease-in-out;
 }
 
+/* Hamburger menu */
 
+.toggle-button {
+  position: absolute;
+  top: 2.3rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 30px;
+}
 
+.toggle-button .bar {
+  height: 4.5px;
+  width: 100%;
+  border-radius: 10px;
+  background: #5c258d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #4389a2,
+    #5c258d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #4389a2,
+    #5c258d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+@media ( max-width: 500px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+  }
+}
 
 
 /*  Hero Section */
