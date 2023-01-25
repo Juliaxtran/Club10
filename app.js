@@ -16,15 +16,15 @@ logo.addEventListener("click", () => {
   });
 });
 
-listen.addEventListener("click", () => {
-  
-});
 
 
 // Hamberger menu toggle
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
+  setTimeout(() => {
+    navbarLinks.style.display = navbarLinks.style.display === "block" ? "none" : "block";
+  }, 100);
 });
 
 // Carousel
