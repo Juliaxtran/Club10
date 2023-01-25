@@ -4,6 +4,7 @@ const buttons = document.querySelectorAll("[data-carousel-button]");
 const navigationHeight = document.querySelector(".navbar").offsetHeight;
 const logo = document.querySelector(".logo");
 const listen = document.querySelector(".btn");
+const links = document.querySelectorAll(".navbar-links li");
 
 console.log(navigationHeight);
 
@@ -22,10 +23,11 @@ logo.addEventListener("click", () => {
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
+
   setTimeout(() => {
-    navbarLinks.style.display === "flex" ? "none" : "flex";
-    navbarLinks.style.display === "none" ? "flex" : "none";
-  }, 100);
+    navbarLinks.classList.toggle('active');
+  }, 3000);
+
 });
 
 // Carousel
