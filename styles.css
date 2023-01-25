@@ -3,11 +3,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--scroll-padding, 50px);
+  scroll-padding-top: var(--scroll-padding, 40px);
 }
 
 
@@ -249,27 +250,53 @@ section#about {
   font-family: 'Unbounded', cursive;
 }
 
+.video-bg-about {
+  filter: brightness(60%) contrast(10);
+}
+
 /* Music */
-section#music {
+section#music, section#jellyfish{
  display: flex;
   flex-direction: column;
  justify-content: center;
  align-items: center;
- background-color: black;
+
 }
 
-section#music > h1 {
+section#music{
+  background-color: black;
+}
+
+.set-list{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  font-family: 'Unbounded', cursive;
+}
+
+
+
+@media ( max-width: 500px) {
+.set-list {
+  font-size: 1.5em;
+}
+}
+
+/* Jelly Fish */
+
+section#jellyfish {
+  gap: 4em;
+}
+
+section#jellyfish > h1 {
   color: white;
   font-size: 3em;
   font-family: 'Unbounded', cursive;
-  margin-bottom: 1em;
-}
-
-@media ( max-width: 500px) {
-  section#music > h1 {
-    font-size: 2em;
-    text-align: center;
-  }
+  margin-top: 3em;
+  text-decoration: underline;
 }
 
 

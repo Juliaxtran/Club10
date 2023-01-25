@@ -6,9 +6,8 @@ const logo = document.querySelector(".logo");
 const listen = document.querySelector(".btn");
 const links = document.querySelectorAll(".navbar-links li");
 
-console.log(navigationHeight);
 
-document.documentElement.style.setProperty('--scroll-padding', `${navigationHeight}px`);
+
 
 logo.addEventListener("click", () => {
   window.scrollTo({
