@@ -5,6 +5,7 @@ const navigationHeight = document.querySelector(".navbar").offsetHeight;
 const logo = document.querySelector(".logo");
 const listen = document.querySelector(".btn");
 const links = document.querySelectorAll(".navbar-links li");
+const jellyfish = document.getElementsByClassName("cover-art")[0];
 
 
 
@@ -29,6 +30,11 @@ toggleButton.addEventListener('click', () => {
 
 });
 
+// Cover art
+jellyfish.addEventListener("click", () => {
+  let url ='https://songwhip.com/tyyy2/jellyfish';
+  window.open(url, "_blank").focus();
+});
 // Carousel
 // buttons.forEach(button => {
 //   button.addEventListener("click", () => {
