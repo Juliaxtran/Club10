@@ -108,17 +108,28 @@ nav, h3{
   }
 
   .navbar-links {
+    display: none;
     width: 100%;
+    font-size: small;
   }
 
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    font-size: 1rem;
   }
 
   .navbar-links ul {
     width: 100%;
     flex-direction: column;
+  }
+
+  .navbar-links li a {
+    padding: .5rem .5rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
   }
 }
 
