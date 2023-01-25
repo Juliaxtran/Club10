@@ -6,7 +6,9 @@ body {
   overflow-x: hidden;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 
@@ -25,6 +27,20 @@ body {
   animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) square-in-center both;
 }
 
+@keyframes in-circle-swoop {
+  from {
+    clip-path: var(--circle-top-right-out);
+  }
+  to {
+    clip-path: var(--circle-bottom-right-in);
+  }
+}
+
+[transition-style="in:custom:circle-swoop"] {
+  --transition__duration: 5s;
+  animation-name: in-circle-swoop;
+}
+
 
 
 /* Navigation */
@@ -34,13 +50,17 @@ nav, h3{
   font-family: "Unica One", cursive;
 }
 
+
 .navbar {
   display: flex;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   justify-content: space-between;
   background-color: black;
   padding-right: 1em;
   color: white;
+  overflow: hidden;
 }
 
 .navbar-links ul {
@@ -219,6 +239,7 @@ section#about {
   letter-spacing: 2px;
   height: fit-content;
 }
+
 
 
 /* Carousal  */
