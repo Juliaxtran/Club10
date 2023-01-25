@@ -7,6 +7,19 @@ const listen = document.querySelector(".btn");
 const links = document.querySelectorAll(".navbar-links li");
 const jellyfish = document.getElementsByClassName("cover-art")[0];
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Scroll to section on link click
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      const href = link.getAttribute("href");
+      const offsetTop = document.querySelector(href).offsetTop;
+      scroll({
+        top: offsetTop - navigationHeight,
+        behavior: "smooth",
+      });
+    });
+  });
+});
 
 
 
