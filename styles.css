@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 html {
@@ -52,9 +51,9 @@ nav, h3{
 
 
 .navbar {
-  display: flex;
   position: sticky;
   top: 0;
+  display: flex;
   z-index: 100;
   justify-content: space-between;
   background-color: black;
