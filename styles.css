@@ -251,11 +251,13 @@ section#about {
 /* Music */
 section#music,
 section#jellyfish,
-section#staying{
+section#staying,
+section#contact{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 2em;
   padding-bottom: 2em;
 }
 
@@ -278,7 +280,7 @@ section#staying {
 
 section#jellyfish,
 section#staying {
-  gap: 4em;
+  padding-bottom: 3em;
 }
 
 section#jellyfish > h1,
@@ -286,9 +288,12 @@ section#staying > h1  {
   color: white;
   font-size: 3em;
   font-family: "Unbounded", cursive;
-  margin: 3em .2em;
   bottom: 4px;
   text-decoration: underline;
+}
+
+section#jellyfish, section#staying {
+  gap: 2em;
 }
 
 .cover-art:hover {
@@ -300,7 +305,7 @@ section#staying > h1  {
   .set-list,
   section#jellyfish > h1,
   section#staying > h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 }
 
@@ -311,6 +316,7 @@ section#contact {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 4em;
   gap: 1em;
   padding-bottom: 2em;
   font-family: "Unbounded", cursive;
