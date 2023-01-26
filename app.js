@@ -5,7 +5,10 @@ const logo = document.querySelector(".logo");
 const listen = document.querySelector(".btn");
 const links = document.querySelectorAll(".navbar-links li");
 const jellyfish = document.getElementsByClassName("cover-art")[0];
-const buttons = document.querySelectorAll("[data-carousel-button]")
+const buttons = document.querySelectorAll("[data-carousel-button]");
+const instagram = document.getElementById("instagram");
+const spotify = document.getElementById("spotify");
+const apple = document.getElementById("apple");
 
 
 
@@ -32,11 +35,30 @@ toggleButton.addEventListener('click', () => {
 
 });
 
+// Redirects
+
 // Cover art
 jellyfish.addEventListener("click", () => {
   let url ='https://songwhip.com/tyyy2/jellyfish';
   window.open(url, "_blank").focus();
 });
+
+// Social Media Links
+instagram.addEventListener("click", () => {
+  let url ='https://www.instagram.com/_club10/';
+  window.open(url, "_blank").focus();
+});
+
+spotify.addEventListener("click", () => {
+  let url = 'https://open.spotify.com/artist/5jbYsfokC2j6V6IIvMOfOP?si=W0MbWnt-QqyCHK6heQBXHQ';
+  window.open(url, "_blank").focus();
+});
+
+apple.addEventListener("click", () => {
+  let url = 'https://open.spotify.com/playlist/1uMgLufRwGf8qIkCJ0Vt28?si=-gAHAz4NRpyP8KgLDKo8CQ';
+  window.open(url, "_blank").focus();
+});
+
 
 //Carousal
 
