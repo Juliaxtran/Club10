@@ -343,6 +343,7 @@ form > input, textarea {
   width: 100%;
   padding: 12px 20px;
   border-radius: 5px;
+  margin-bottom: 3em ;
   border: none;
   background-color: transparent;
   border: 1px solid white;
@@ -357,33 +358,36 @@ form > input, textarea {
   transition: all 0.5s ease-in-out;
 }
 
+/* Thank you section */
 section#thanks {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  gap: 1em;
 }
 
 section#thanks > h1 {
   color: white;
-  font-size: 3em;
+  font-size: 2em;
   font-family: "Unbounded", cursive;
   margin: auto;
   text-align: center;
-  max-width: 500px;
+  max-width: 650px;
+  margin-top: 3em ;
 
 }
 
 /* Carousal  */
 
-/* .carousel {
-  min-width: 350px;
-  height: 55vh;
-  margin: 1em;
+.carousel {
+  width: 100vw;
+  height: 100vh;
   position: relative;
 }
 
-.carousel >  ul {
+.carousel > ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -393,6 +397,8 @@ section#thanks > h1 {
   position: absolute;
   inset: 0;
   opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
 }
 
 .slide > img {
@@ -401,23 +407,25 @@ section#thanks > h1 {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 5px;
 }
 
 .slide[data-active] {
   opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
 }
 
 .carousel-button {
- position: absolute;
- background: none;
- border: none;
-  color: rgba(255,255,255, 0.7);
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
   font-size: 4rem;
   top: 50%;
-  z-index: 1;
   transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
   cursor: pointer;
+  border-radius: .25rem;
   padding: 0 .5rem;
   background-color: rgba(0, 0, 0, .1);
 }
@@ -428,7 +436,9 @@ section#thanks > h1 {
   background-color: rgba(0, 0, 0, .2);
 }
 
-
+.carousel-button:focus {
+  outline: 1px solid black;
+}
 
 .carousel-button.prev {
   left: 1rem;
@@ -436,4 +446,4 @@ section#thanks > h1 {
 
 .carousel-button.next {
   right: 1rem;
-} */
+}

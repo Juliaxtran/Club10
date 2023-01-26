@@ -21,16 +21,31 @@
 
 
   <section id="thanks">
-    <video autoplay muted loop playsinline class="video-bg">
+    <!-- <video autoplay muted loop playsinline class="video-bg">
       <source src="/assets/bubbles.mp4" type="video/mp4">
-    </video>
-    <h1>Thank you for contacting us we are going to get back to you as soon as we can.</h1>
-    <a href="https://clubten.netlify.app/" class="listen"><button class="btn">BACK TO SITE</button></a>
+    </video> -->
+    <h1>Thank you for contacting us, we will get back to you soon</h1>
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+      <ul data-slides>
+        <li class="slide" data-active>
+          <img src="assets/project1.jpeg" alt="Nature Image #1">
+        </li>
+        <li class="slide">
+          <img src="assets/project2.jpg" alt="Nature Image #2">
+        </li>
+        <li class="slide">
+          <img src="assets/project3.jpg" alt="Nature Image #3">
+        </li>
+      </ul>
+    </div>
+    <a href="https://clubten.netlify.app/" class="listen"><button class="send-btn">BACK TO SITE</button></a>
 
   </section>
 
 
 </body>
-<script src="app.js"></script>
+<script src="carousel.js" ></script>
 
 </html>
