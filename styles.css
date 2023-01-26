@@ -254,8 +254,7 @@ section#thanks {
 }
 
 section#music,
-section#staying,
-section#thanks {
+section#staying {
   background-color: black;
 }
 
@@ -277,7 +276,8 @@ section#staying {
 }
 
 section#jellyfish > h1,
-section#staying > h1 {
+section#staying > h1 ,
+section#thanks > h1 {
   color: white;
   font-size: 3em;
   font-family: "Unbounded", cursive;
