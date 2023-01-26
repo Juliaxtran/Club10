@@ -244,7 +244,8 @@ section#about {
 /* Music */
 section#music,
 section#jellyfish,
-section#staying {
+section#staying,
+section#thanks {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,7 +254,8 @@ section#staying {
 }
 
 section#music,
-section#staying {
+section#staying,
+section#thanks {
   background-color: black;
 }
 
