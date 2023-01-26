@@ -287,6 +287,7 @@ section#staying > h1  {
   font-size: 3em;
   font-family: "Unbounded", cursive;
   margin-top: 3em;
+  bottom: 4px;
   text-decoration: underline;
 }
 
