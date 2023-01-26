@@ -286,11 +286,9 @@ section#staying > h1  {
   color: white;
   font-size: 3em;
   font-family: "Unbounded", cursive;
-  margin: 3em .5em;
+  margin: 3em .2em;
   bottom: 4px;
   text-decoration: underline;
-
-
 }
 
 .cover-art:hover {
