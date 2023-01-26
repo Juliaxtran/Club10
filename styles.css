@@ -3,15 +3,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-padding, 50px);
 }
-
-
 
 /* Animations  */
 
@@ -42,17 +39,12 @@ html {
   animation-name: in-circle-swoop;
 }
 
-
-
 /* Navigation */
 
-
-nav, h3{
+nav,
+h3 {
   font-family: "Unica One", cursive;
 }
-
-
-
 
 .navbar {
   position: sticky;
@@ -80,7 +72,6 @@ nav, h3{
 .navbar-links li {
   list-style: none;
 }
-
 
 .navbar-links a {
   text-decoration: none;
@@ -126,7 +117,7 @@ nav, h3{
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@media ( max-width: 500px) {
+@media (max-width: 500px) {
   .toggle-button {
     display: flex;
   }
@@ -149,14 +140,13 @@ nav, h3{
   }
 
   .navbar-links li a {
-    padding: .5rem .5rem;
+    padding: 0.5rem 0.5rem;
   }
 
   .navbar-links.active {
     display: flex;
   }
 }
-
 
 /*  Hero Section */
 section {
@@ -182,15 +172,13 @@ section#hero {
   z-index: -1;
 }
 
-
-
 .btn {
   border: none;
   padding: 1em 2em;
   border-radius: 30px;
   margin-bottom: 3em;
   cursor: pointer;
-  font-family: 'Unbounded', cursive;
+  font-family: "Unbounded", cursive;
   background: #5c258d; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to left,
@@ -209,10 +197,11 @@ section#hero {
 
 .listen {
   color: white;
-  font-family: 'Unbounded', cursive;
+  font-family: "Unbounded", cursive;
   text-decoration: none;
 }
-.btn:hover , .btn:active {
+.btn:hover,
+.btn:active {
   background: #5c258d; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -228,7 +217,6 @@ section#hero {
   scale: 1.1;
   transition: all 0.5s ease-in-out;
   border: 5px solid pink;
-
 }
 
 /* About Section */
@@ -238,7 +226,6 @@ section#about {
   flex-direction: column;
   align-items: center;
   gap: 1em;
-
 }
 
 .about-text {
@@ -247,7 +234,7 @@ section#about {
   margin-top: 3em;
   letter-spacing: 2px;
   height: fit-content;
-  font-family: 'Unbounded', cursive;
+  font-family: "Unbounded", cursive;
 }
 
 .video-bg-about {
@@ -255,40 +242,43 @@ section#about {
 }
 
 /* Music */
-section#music, section#jellyfish, section#staying{
- display: flex;
+section#music,
+section#jellyfish,
+section#staying {
+  display: flex;
   flex-direction: column;
- justify-content: center;
- align-items: center;
- padding-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2em;
 }
 
-section#music, section#staying{
+section#music,
+section#staying {
   background-color: black;
 }
 
-.set-list{
+.set-list {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2.5em;
   letter-spacing: 2px;
-  font-family: 'Unbounded', cursive;
+  font-family: "Unbounded", cursive;
 }
-
-
 
 /* Jelly Fish */
 
-section#jellyfish, section#staying {
+section#jellyfish,
+section#staying {
   gap: 4em;
 }
 
-section#jellyfish > h1, section#staying > h1 {
+section#jellyfish > h1,
+section#staying > h1 {
   color: white;
   font-size: 3em;
-  font-family: 'Unbounded', cursive;
+  font-family: "Unbounded", cursive;
   margin-top: 3em;
   text-decoration: underline;
 }
@@ -298,19 +288,74 @@ section#jellyfish > h1, section#staying > h1 {
   transition: all 0.5s ease-in-out;
 }
 
-
-
-@media ( max-width: 500px) {
-  .set-list, section#jellyfish > h1, section#staying > h1 {
+@media (max-width: 500px) {
+  .set-list,
+  section#jellyfish > h1,
+  section#staying > h1 {
     font-size: 1.5em;
   }
-  }
+}
+
+/* Contact Section */
+
+section#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding-bottom: 2em;
+  font-family: "Unbounded", cursive;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 3em;
+  color: white;
+  padding: 3em;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+
+form > input, textarea {
+  resize: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 100%;
+  font-family: "Unica One", cursive;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: "Unbounded", cursive;
+  font-size: 1em;
+}
+
+.send-btn:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
 
 
 /* Carousal  */
-
-
-
 
 /* .carousel {
   min-width: 350px;
