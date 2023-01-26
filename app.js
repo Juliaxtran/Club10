@@ -5,6 +5,7 @@ const logo = document.querySelector(".logo");
 const listen = document.querySelector(".btn");
 const links = document.querySelectorAll(".navbar-links li");
 const jellyfish = document.getElementsByClassName("cover-art")[0];
+const ays = document.getElementsByClassName("cover-art")[1];
 const buttons = document.querySelectorAll("[data-carousel-button]");
 const instagram = document.getElementById("instagram");
 const spotify = document.getElementById("spotify");
@@ -40,6 +41,11 @@ toggleButton.addEventListener('click', () => {
 // Cover art
 jellyfish.addEventListener("click", () => {
   let url ='https://songwhip.com/tyyy2/jellyfish';
+  window.open(url, "_blank").focus();
+});
+
+ays.addEventListener("click", () => {
+  let url ='https://songwhip.com/adrian-10z/are-you-staying';
   window.open(url, "_blank").focus();
 });
 
