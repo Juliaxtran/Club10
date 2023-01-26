@@ -46,6 +46,10 @@ h3 {
   font-family: "Unica One", cursive;
 }
 
+h1 {
+  letter-spacing: 6px;
+}
+
 .navbar {
   position: sticky;
   width: 100vw;
@@ -234,7 +238,8 @@ section#about {
   margin-top: 3em;
   letter-spacing: 2px;
   height: fit-content;
-  font-family: "Unbounded", cursive;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
   max-width: 650px;
   text-align: center;
 }
