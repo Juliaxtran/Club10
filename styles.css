@@ -150,6 +150,21 @@ h1 {
   .navbar-links.active {
     display: flex;
   }
+
+
+  .video-bg-hero {
+    position: relative;
+    width: 600px;
+    height: 20%;
+    z-index: 100;
+  }
+
+  section#hero {
+    background-color: black;
+    z-index: -1;
+  }
+
+
 }
 
 /*  Hero Section */
